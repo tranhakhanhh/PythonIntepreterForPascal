@@ -1,0 +1,22 @@
+program Hello;
+  function fib(n: integer): integer;
+var
+ f0, f1, tmpf0, k: integer;
+begin
+ f1 := n;
+ IF f1 >1 then
+ begin
+   k := f1-1;
+   f0 := 0;
+   f1 := 1;
+ end;
+ else
+  IF f1 < 0 then
+  begin
+    f1 := 0;
+  end;
+ fib := f1;
+end;
+begin
+writeln(fib(23));
+end.
